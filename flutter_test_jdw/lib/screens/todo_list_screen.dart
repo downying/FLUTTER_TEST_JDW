@@ -4,15 +4,11 @@ import 'package:provider/provider.dart';
 import 'package:flutter_test_jdw/model/todo.dart';
 
 class TodoListScreen extends StatelessWidget {
-  final String name;
-
-  TodoListScreen({required this.name});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('$name\'s Todo List 🍀'),
+        title: const Text('✨ Todo List'),
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
